@@ -3,11 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="./output.css" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          extend: {
+            colors: {
+              primary: '#2565AE',
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <h1 class="md:text-blue-900 text-red-300 text-9xl">hola</h1>
+  <body class="font-[poppins]">
+    <header
+      class="flex md:items-center flex-col md:flex-row gap-5 mt-10 max-w-7xl mx-auto px-4"
+    >
+      <div class="flex-1">
+        <h1 class="text-primary text-3xl text-balance">
+          <span class="">Consigue tu propio</span> negocio
+          <span class="font-bold">Llave en mano con el modelo MFC</span>
+        </h1>
+
+        <button
+          class="bg-primary text-3xl font-bold text-white px-10 py-3 rounded-full inline-block mt-5"
+        >
+          Comprar ahora
+        </button>
+      </div>
+
+      <div class="flex-1">
+        <div class="bg-blue-900 w-full min-h-72"></div>
+      </div>
+    </header>
   </body>
 </html>
