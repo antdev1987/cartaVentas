@@ -6,8 +6,57 @@
     <!-- <link href="./output.css" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2565AE",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <h1 class="md:text-blue-900 text-red-300 text-9xl">hola</h1>
+    <h1 class="text-primary text-center text-3xl font-bold my-10">
+      Tienes dos opciones
+    </h1>
+
+    <footer class="bg-primary relative text-white">
+      <div class="container mx-auto">
+        <div class="lg:flex items-center gap-16">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-3"
+          >
+            <div class="max-w-[23rem]">
+              <img class="w-full mt-[-2rem]" src="images/bug.png" />
+            </div>
+
+            <div>
+              <h3
+                class="leading-[1.9rem] md:my-0 my-6 text-center text-3xl font-bold"
+              >
+                Seguir <span class="block">actuando</span> como
+                <span class="block">Picapiedra</span>
+              </h3>
+            </div>
+          </div>
+
+          <div>
+            <img
+              class="max-w-[8rem] md:my-0 my-6 mx-auto"
+              src="images/lighting.png"
+            />
+          </div>
+
+          <div class="text-center py-5">
+            <h2 class="text-6xl font-bold">
+              Unirte <span class="block">Ahora</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
