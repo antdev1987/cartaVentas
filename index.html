@@ -17,21 +17,23 @@
       tailwind.config = {
         theme: {
           fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
+            poppins: ["Poppins", "sans-serif"],
           },
           extend: {
             colors: {
-              primary: '#2565AE',
+              primary: "#2565AE",
+              green: "#83C648",
+              darkprimary: "#1F3A62",
             },
           },
         },
       };
     </script>
   </head>
-   
+
   <body class="font-[poppins]">
     <header
-      class="flex md:items-center flex-col md:flex-row gap-5 mt-10 max-w-7xl mx-auto px-4"
+      class="flex md:items-center flex-col md:flex-row gap-5 my-10 max-w-7xl mx-auto px-4"
     >
       <div class="flex-1">
         <h1 class="text-primary text-3xl text-balance">
@@ -51,13 +53,349 @@
       </div>
     </header>
 
+    <section>
+      <div class="max-w-7xl mx-auto px-4">
+        <article
+          class="flex flex-col md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 1
+            </h3>
+            <h4 class="px-5 py-2 text-darkprimary">
+              +350€ en producto
+              <span class="block">Naturkin</span>
+            </h4>
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">+350€</span>
+            </h4>
+
+            <h4 class="px-5 py-2 text-darkprimary">
+              Ganas+100€ exclusivamentecon
+              <span class="block">elproducto</span>
+            </h4>
+          </div>
+
+          <div class="max-w-[30rem]">
+            <img class="w-full" src="images/bono-1.png" alt="" />
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="max-w-[30rem]">
+            <img class="w-full" src="images/bono-2.png" alt="" />
+          </div>
+
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 2
+            </h3>
+            <h4 class="px-5 pt-2 text-darkprimary">
+              Formaciones en
+              <span class="block">directo con posibilidad</span> de preguntar
+            </h4>
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">497€</span>
+            </h4>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 3
+            </h3>
+            <h4 class="px-5 py-2 text-darkprimary">
+              Bonos exclusivos de
+              <span class="block">tu equipo de trabajo</span>
+            </h4>
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">Ilimitado</span>
+            </h4>
+          </div>
+
+          <div class="max-w-[30rem]">
+            <img class="w-full" src="images/bono-3.png" alt="" />
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="max-w-[30rem]">
+            <img class="w-full" src="images/bono-4.png" alt="" />
+          </div>
+
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 4
+            </h3>
+            <h4 class="px-5 pt-2 text-darkprimary">
+              Acceso a las
+              <span class="block">herramientas por 1 mes</span>
+            </h4>
+            <img
+              class="max-w-[13rem] py-2 mx-auto"
+              src="images/ifanel-irapyd.png"
+              alt=""
+            />
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">47€</span>
+            </h4>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 5
+            </h3>
+            <h4 class="px-5 py-2 text-darkprimary">
+              Acceso 1 mes de
+              <span class="block">formación con NINJA</span>
+            </h4>
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">97€</span>
+            </h4>
+          </div>
+
+          <div class="max-w-[30rem]">
+            <img class="w-full" src="images/bono-5.png" alt="" />
+          </div>
+        </article>
+      </div>
+
+      <div class="bg-primary text-white my-5">
+        <div
+          class="flex flex-col md:flex-row gap-8 justify-between items-center"
+        >
+          <div class="md:ms-40 ms-0 pt-6">
+            <h2 class="font-bold md:text-5xl text-4xl uppercase">Importante</h2>
+            <h3 class="text-center leading-[1rem]">
+              Solo para los 3 próximas 24 <span class="block">horas</span>
+            </h3>
+          </div>
+
+          <div class="max-w-[30rem]">
+            <img class="w-full mb-[-1.2rem]" src="images/24hour.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4">
+        <article
+          class="flex flex-col md:flex-row items-center justify-center md:gap-10 gap-0"
+        >
+          <div class="max-w-[20rem]">
+            <img class="w-full" src="images/bono-6.png" alt="" />
+          </div>
+
+          <div class="text-center">
+            <h3
+              class="font-bold uppercase text-2xl py-1 text-white bg-primary rounded-t-lg"
+            >
+              Bono 6
+            </h3>
+            <h4 class="px-5 py-2 text-darkprimary">
+              Acceso al próximo
+              <span class="block">Master Mind privado en</span> casa de Miguel
+              Calvo
+            </h4>
+            <h4 class="text-2xl text-primary">
+              Valor <span class="block text-4xl font-bold">997€</span>
+            </h4>
+          </div>
+        </article>
+
+        <div class="text-center my-10">
+          <h2 class="text-primary font-bold text-4xl">
+            Valor real Franquicia 5043€
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-green text-center py-14">
+      <h3 class="text-white text-xl leading-[1.4rem]">
+        Lanzamos a un precio único <span class="block">y exclusivo de:</span>
+      </h3>
+      <h2 class="text-white sm:text-[8rem] text-[5rem] font-bold">248 €</h2>
+
+      <div class="text-center">
+        <button
+          class="bg-white text-green text-xl font-bold px-10 py-3 rounded-full inline-block"
+        >
+          Comprar ahora
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-8"
+        >
+          <div>
+            <h2 class="font-bold text-primary md:text-5xl text-4xl">
+              14días de <span class="block">garantía</span> dedevolución
+            </h2>
+            <h3
+              class="text-[1.6rem] font-light text-primary leading-[1.9rem] mt-3"
+            >
+              No te haremos ninguna <span class="block">pregunta</span>
+            </h3>
+          </div>
+
+          <div class="max-w-[25rem] md:mx-0 mx-auto">
+            <img class="w-full" src="images/garantia.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center mt-[4.5rem] mb-[10rem]">
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="text-lg text-primary mb-5">
+          ¿Y por qué te damos tanto a cambio de tan poco?
+        </p>
+
+        <h2
+          class="md:text-5xl text-4xl font-bold text-primary max-w-[50rem] mx-auto"
+        >
+          Porque si tú no tienes <span class="block">resultados,</span> nosotros
+          no ganamos nada
+        </h2>
+      </div>
+    </div>
+
+    <section
+      class="bg-primary text-white my-20 lg:h-[19rem] md:py-0 py-10 px-5 md:px-0"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-around items-center">
+          <div>
+            <h2 class="max-w-[16rem] text-3xl font-bold text-white text-center">
+              Por mucho menos de lo que vale 1 café al día
+            </h2>
+          </div>
+
+          <div class="max-w-[35rem]">
+            <img
+              class="w-full md:mt-[-4rem] mt-10"
+              src="images/cups-of-coffee.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center lg:mb-0 mb-10">
+      <button
+        class="bg-primary text-white text-2xl font-bold px-10 py-3 rounded-full inline-block mb-5"
+      >
+        Comprar ahora
+      </button>
+    </div>
+
+    <div class="text-center my-[4rem]">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-lg text-primary max-w-[25rem] mx-auto mb-5">
+          Te comparto mi compromiso personal  contigo y con el proyecto
+        </p>
+
+        <h2
+          class="text-5xl font-bold italic text-primary max-w-[30rem] mx-auto md:text-5xl text-4xl"
+        >
+          Ser la empresa nº1 de España
+        </h2>
+      </div>
+    </div>
+
+    <section class="bg-primary text-white lg:mt-[2rem]">
+      <div class="max-w-7xl mx-auto py-10 px-10">
+        <h2 class="text-center font-bold text-3xl">
+          ¿Por qué formar parte de emprenYA?
+        </h2>
+
+        <div class="flex gap-6 flex-wrap my-10">
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Entrar el minuto 1 del
+              <span class="md:block inline">partido</span>
+            </h3>
+          </div>
+
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Exclusividad del <span class="md:block inline">mercado</span>
+            </h3>
+          </div>
+
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Proyecto 100% <span class="md:block inline">español</span>
+            </h3>
+          </div>
+
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Potencial de
+              <span class="md:block inline">crecimiento rápido</span>
+            </h3>
+          </div>
+
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Trabajar
+              <span class="md:block inline">directamente con el</span> equipo
+              directivo
+            </h3>
+          </div>
+
+          <div class="px-5 py-16 flex-[30%] border-2 rounded-[1rem]">
+            <h3 class="font-light text-center leading-[1.2rem]">
+              Solvencia
+              <span class="md:block inline">económica y</span> financiera
+            </h3>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="bg-white text-primary text-2xl font-bold px-10 py-3 rounded-full inline-block mt-5"
+          >
+            Comprar ahora
+          </button>
+        </div>
+      </div>
+    </section>
+
     <h2 class="text-primary text-center text-3xl font-bold my-10">
       Tienes dos opciones
     </h2>
 
     <footer class="bg-primary relative text-white">
-      <div class="container mx-auto">
-        <div class="lg:flex items-center gap-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-16"
+        >
           <div
             class="flex flex-col md:flex-row items-center justify-center gap-3"
           >
